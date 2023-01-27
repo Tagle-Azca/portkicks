@@ -1,0 +1,202 @@
+:root{
+    --verde:#C9E414;
+    --blanco:#fff;
+    --azul:#3A7C7D;
+    --rat:#2b5b5c;
+    --rojo:#FF0000;
+    --oscuro:#000;
+    --gris:#3D3D3D;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+/*globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1,h2{
+    font-family: var(--titulos);
+}
+h3, p, a{
+    font-family: var(--parrafos);
+}
+
+img{
+    max-width: 100%;
+}
+.verde{
+    color: var(--verde);
+}
+.rojo{
+    color: var(--rojo);
+}
+.azul{
+    color: var(--azul)
+}
+.rat{
+    color: var(--rat)
+}
+
+.ocultar{
+    display: none;
+}
+
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,.5);
+    z-index: 4;
+}
+
+@keyframes desplazamiento {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid var(--blanco);
+}
+@media(min-width: 768px) {
+    .bordes{
+        border: 4px solid var(--blanco);
+    }
+}
+
+.btn-rojo{
+    background-color: var(--rojo);
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.btn-verde{
+    background-color: var(--verde);
+    border: none;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-family: var(--parrafos);
+}
+
+/*encabezado de nosotors*/
+
+.contenedor-nosotros{
+    background-color: var(--gris);
+    position: fixed;
+    width: 100%;
+    height: 7%;
+    font-size: 15px;
+    z-index: 5;
+}
+
+.contenido-nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetas{
+    background: var(--blanco);
+    font-family: sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 250px 750px;
+}
+.card1 h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card1{
+    width: 300px;
+    height: 400px;
+    background: var(--blanco);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0;
+    transform: scale(0.95);
+    transition: box-shadow .5s ease-in-out;
+    overflow: hidden;
+}
+
+.card1:hover{
+    transform: scale(1);
+    box-shadow: 5px 20px 30px;
+}
+
+.imgBOX{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.detalles{
+    position: absolute;
+    width: 100%;
+    height: 20;
+    background: var(--blanco);
+    padding: 10px 20px;
+    bottom: -30%;
+    transition: .5s;
+}
+
+.detalles:hover{
+    bottom: 0;
+}
+
+.contenidoTexto{
+    position: relative;
+    margin-top: 10px;
+    color: var(--gris);
+}
+
+h3{
+    font-size: 20px;
+    padding: 5px 0;
+}
+
+.precio{
+    position:absolute;
+    top: 0;
+    right: 0;  
+    font-size: 10px;
+    
+}

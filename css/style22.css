@@ -1,0 +1,206 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+body {
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23FFFFFF' stroke-width='64.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23C9E414' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23c1de1a' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23b8d820' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23b0d227' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23a7cc2d' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%239fc533' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%2397bf39' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%238eb93f' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%2386b345' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%237dad4c' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%2375a752' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%236ca158' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%23649b5e' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235c9464' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%23538e6a' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%234b8871' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%23428277' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%233A7C7D' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+
+background-size: cover;;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #171717;
+    position: fixed;
+    width: 100%;
+    z-index: 100%;
+}
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.content{
+    color: #fff;
+}
+
+
+.logo {
+    margin-left: -135px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #3f3f3f;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header {
+    height: 60vh !important;
+    background: url(img/fondo.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 0 100px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid rgb(201, 228,20);
+    color: #fff;
+    text-decoration: none;
+    background: rgb(58,124,125);
+}
+
+.btn:hover {
+    background: none;
+    
+}
+
+.btn-home {
+    display: flex;
+}
+
+.btn-home a {
+    margin: 0 10px;
+}
+
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 30px;
+    background: #1f1d1d
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+}
+
+.box-container .box {
+    height: 11rem;
+    width: 17rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    margin: 2rem;   
+}
+
+.box-container .box i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: rgb(58,124,125);
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-container .box h3 {
+    font-size: 20px;
+    color: rgb(201, 228, 20);
+
+}
+
+.box-container .box p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.about {
+    background: #171717;
+}
+
+.price {
+    background: url(IMG/idea.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+.contact {
+    padding-top: 20px;
+    background: #171717;
+    padding-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+
+    .title {
+        margin-bottom: 0;
+        font-size: 40px;
+    }
+
+    .sau {
+        height: 100vh;
+    }
+
+    .navbar {
+        display: none;
+    }
+   
+    
+}
