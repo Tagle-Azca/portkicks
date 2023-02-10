@@ -1,0 +1,286 @@
+:root{
+    --verde:#C9E414;
+    --blanco:#fff;
+    --azul:#3A7C7D;
+    --rat:#2b5b5c;
+    --rojo:#FF0000;
+    --oscuro:#000;
+    --titulos:'Arima Madurai',cursive;
+    --parrafos:'Mulish', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    overflow-x: hidden;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+*,*::after, *::before{
+    box-sizing: inherit;
+}
+/*globales*/
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+h1,h2{
+    font-family: var(--titulos);
+}
+h3, p, a{
+    font-family: var(--parrafos);
+}
+
+img{
+    max-width: 100%;
+}
+.verde{
+    color: var(--verde);
+}
+.rojo{
+    color: var(--rojo);
+}
+.azul{
+    color: var(--azul)
+}
+.rat{
+    color: var(--rat)
+}
+
+.pantalla-completa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+}
+
+@keyframes desplazamiento {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0);
+    }
+}
+
+@media(min-width: 768px) {
+    .btn{
+        font-size: 2.2rem;
+    }
+}
+.bordes{
+    border: 3px solid var(--blanco);
+}
+@media(min-width: 768px) {
+    .bordes{
+        border: 4px solid var(--blanco);
+    }
+}
+
+
+
+
+
+
+
+
+.contenedor-top{
+    background-color: var(--oscuro);
+    position: fixed;
+    width: 100%;
+    height: 8%;
+    font-size: 15px;
+    z-index: 5;
+}
+
+.contenido-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 768px) { 
+    .navegacion a{
+        text-align: left;
+    }
+}
+
+
+.flecha a{
+    position: absolute;
+    left: 3%;
+    top: 25%;
+    color: var(--blanco);
+}
+
+.flecha a:hover{
+    color: var(--azul);
+}
+
+.contenido-header{
+    position: relative;
+}
+
+
+.contenido-header::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.texto-encabezado{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1rem, 8vw, 7rem);
+}
+
+.texto-encabezado h2{
+    color: var(--blanco);
+    margin-top: 10px;
+    margin-bottom: 10px;   
+}
+
+
+
+
+
+
+
+
+
+
+
+/*diseño de la seccion donde estan las fotos de los productos*/
+
+.contenido{
+    margin: 0;
+    padding: 100;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    background-color: rgb(174, 174, 174);
+    top: 0px;
+    
+}
+.contenido{
+    max-width: 1200px;
+    width: 100%;
+    margin: 40px auto;
+    display:flexbox;
+    
+}
+
+.mostrador .fila{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    
+}
+
+.mostrador .fila .item{
+    max-width: 210px;
+    padding: 5px;
+    height: 300px;
+    /*border: 2px solid red;*/
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s;
+}
+.mostrador .fila .item:hover{
+    background-color: #69696915;
+    height: 100%;
+}
+.mostrador .fila .item img{
+    width: 100%;
+    margin: 5px 0;
+    height: 100%;
+}
+
+
+.mostrador .fila .item .descripcion{
+    color: #707070;
+    font-weight: bold;
+}
+.mostrador .fila .item .precio{
+    color: var(--azul);
+    font-weight: bold;
+    font-size: 20px;
+}
+.seleccion{
+    transition: .5s ease;
+    opacity: 0;
+    width: 0%;
+    border: 1px solid #ccc;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.info{
+    padding: 20px;
+}
+.info img{
+    display: block;
+    margin: 30px auto;
+    width: 80%;
+}
+.info h2{
+    color: #707070;
+    margin-bottom: 10px;
+}
+.info p{
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.info .precio{
+    font-size: 30px;
+    font-weight: bold;
+    color: #f85151;
+    margin-bottom: 10px;
+    display: block;
+}
+.info .fila{
+    display: flex;
+    align-items: flex-end;
+}
+.info .fila label{
+    display: block;
+    margin-bottom: 10px;
+}
+.info .fila select{
+    width: 100px;
+    font-size: 18px;
+    padding: 6px;
+    margin-right: 30px;
+}
+.info .fila button{
+    height: 40px;
+    border: none;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #f85151;
+}

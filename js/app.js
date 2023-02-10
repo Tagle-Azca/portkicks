@@ -17,8 +17,8 @@ const eventos = () =>{
 }
 
 const abrirMenu = () =>{
-     navegacion.classList.remove('ocultar');
-     botonCerrar();
+    navegacion.classList.remove('ocultar');
+    botonCerrar();
 }
 
 const botonCerrar = () =>{
@@ -47,7 +47,6 @@ const observer = new IntersectionObserver((entries, observer)=>{
 
 
 imagenes.forEach(imagen=>{
-   
     observer.observe(imagen);
 });
 
@@ -88,7 +87,7 @@ const mostrartenis = (nikes, adidass, converses, especialess, todos) =>{
 
     btnadidas.addEventListener('click', ()=>{
         limpiarHtml(contenedortenis);
-         adidass.forEach(adidas=> contenedortenis.appendChild(adidas));
+        adidass.forEach(adidas=> contenedortenis.appendChild(adidas));
     });
 
     btnconverse.addEventListener('click', ()=>{

@@ -8,6 +8,7 @@
     --gris:#3D3D3D;
     --titulos:'Arima Madurai',cursive;
     --parrafos:'Mulish', sans-serif;
+    --obscurecer:rgb(0,0,0,.5):
 }
 
 html{
@@ -62,7 +63,7 @@ img{
     left: 0;
     bottom: 0;
     right: 0;
-    background-color: rgba(0,0,0,.5);
+    background-color: var(--obscurecer);
     z-index: 4;
 }
 
@@ -90,113 +91,39 @@ img{
     }
 }
 
-.btn-rojo{
-    background-color: var(--rojo);
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-
-
-.btn-verde{
-    background-color: var(--verde);
-    border: none;
-    display: inline-block;
-    margin-bottom: 2rem;
-    font-family: var(--parrafos);
-}
-
 /*encabezado de nosotors*/
 
-.contenedor-nosotros{
+.contenedor-top{
     background-color: var(--gris);
     position: fixed;
     width: 100%;
     height: 7%;
     font-size: 15px;
     z-index: 5;
+    top: 0%;
 }
 
-.contenido-nosotros{
+.contenido-top{
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.tarjetas{
-    background: var(--blanco);
-    font-family: sans-serif;
-    width: 100%;
-    height: 100vh;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 250px 750px;
-}
-.card1 h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+.contenedor-somos{
+    background-image: url(../IMG/pasto.jpg);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    z-index: 2;
+    background-color: rgba(0, 0, 0,);
 }
 
-.card1{
-    width: 300px;
-    height: 400px;
-    background: var(--blanco);
-    position: relative;
-    border-radius: 10px;
-    box-shadow: 0;
-    transform: scale(0.95);
-    transition: box-shadow .5s ease-in-out;
-    overflow: hidden;
-}
-
-.card1:hover{
-    transform: scale(1);
-    box-shadow: 5px 20px 30px;
-}
-
-.imgBOX{
-    width: 100%;
-    height: 80%;
-    overflow: hidden;
-}
-
-img{
-    width: 100%;
-    height: 100%;
-}
-
-.detalles{
-    position: absolute;
-    width: 100%;
-    height: 20;
-    background: var(--blanco);
-    padding: 10px 20px;
-    bottom: -30%;
-    transition: .5s;
-}
-
-.detalles:hover{
-    bottom: 0;
-}
-
-.contenidoTexto{
-    position: relative;
-    margin-top: 10px;
-    color: var(--gris);
-}
-
-h3{
-    font-size: 20px;
-    padding: 5px 0;
-}
-
-.precio{
-    position:absolute;
+.contenedor-somos::before{
+    content:'';
     top: 0;
-    right: 0;  
-    font-size: 10px;
-    
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.8);
+    z-index: -1;
 }
