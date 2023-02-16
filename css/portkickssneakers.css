@@ -16,10 +16,14 @@ html{
 }
 body{
     font-size: 1.6rem;
-    overflow-x: hidden;
-    
+    overflow-x: hidden;  
 }
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+
 
 *,*::after, *::before{
     box-sizing: inherit;
@@ -123,7 +127,7 @@ img{
 }
 
 .flecha a:hover{
-    color: var(--azul);
+    color: var(--verde);
 }
 
 .contenido-header{
@@ -138,7 +142,7 @@ img{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.5);
 }
 .texto-encabezado{
     position: absolute;
@@ -161,126 +165,98 @@ img{
 
 
 
-
-
-
-
+.bucle{
+    padding: 10px;
+    margin-top: 0x;
+    margin-bottom: 0;
+    background-image: radial-gradient(circle, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    color: var(--blanco);
+}
 
 
 
 /*diseño de la seccion donde estan las fotos de los productos*/
 
-.contenido{
-    margin: 0;
-    padding: 100;
-    box-sizing: border-box;
-    font-family: 'Open Sans';
-    background-color: rgb(174, 174, 174);
-    top: 0px;
-    
+
+.contenedor {
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px 0;
+
+	
 }
-.contenido{
-    max-width: 1200px;
+
+.titulo {
+	font-size: 24px;
+	padding: 20px 0;
+}
+
+.contenedor-conciertos {
+	
+}
+
+.card {
+	border-radius: 10px;
+	min-height: 200px;
+	font-weight: bold;
+	padding: 20px;
+	position: relative;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+
+	
+}
+
+.card .textos {
+	height: 100%;
     width: 100%;
-    margin: 40px auto;
-    display:flexbox;
-    
+	
+	
 }
 
-.mostrador .fila{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    
-}
-
-.mostrador .fila .item{
-    max-width: 210px;
-    padding: 5px;
-    height: 300px;
-    /*border: 2px solid red;*/
-    text-align: center;
-    margin: 0 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: .3s;
-}
-.mostrador .fila .item:hover{
-    background-color: #69696915;
-    height: 100%;
-}
-.mostrador .fila .item img{
-    width: 100%;
-    margin: 5px 0;
-    height: 100%;
-}
+.banner {
+	border-radius: 10px;
+	text-align: center;
+	padding: 20px;
+	background-size: cover;
+	background-position: center center;
 
 
-.mostrador .fila .item .descripcion{
-    color: #707070;
-    font-weight: bold;
-}
-.mostrador .fila .item .precio{
-    color: var(--azul);
-    font-weight: bold;
-    font-size: 20px;
-}
-.seleccion{
-    transition: .5s ease;
-    opacity: 0;
-    width: 0%;
-    border: 1px solid #ccc;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    overflow: hidden;
 }
 
+.banner ul {
+	list-style: none;
+}
 
-.info{
-    padding: 20px;
+.banner ul li {
+	margin: 15px;
+	font-weight: bold;
 }
-.info img{
-    display: block;
-    margin: 30px auto;
-    width: 80%;
+
+.banner .boton {
+	background: #FFD600;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
 }
-.info h2{
-    color: #707070;
-    margin-bottom: 10px;
+
+@media screen and (max-width: 900px) {
+	
 }
-.info p{
-    font-size: 14px;
-    color: #707070;
-    margin-bottom: 10px;
+
+@media screen and (max-width: 700px) {
+	
 }
-.info .precio{
-    font-size: 30px;
-    font-weight: bold;
-    color: #f85151;
-    margin-bottom: 10px;
-    display: block;
-}
-.info .fila{
-    display: flex;
-    align-items: flex-end;
-}
-.info .fila label{
-    display: block;
-    margin-bottom: 10px;
-}
-.info .fila select{
-    width: 100px;
-    font-size: 18px;
-    padding: 6px;
-    margin-right: 30px;
-}
-.info .fila button{
-    height: 40px;
-    border: none;
-    padding: 0 10px;
-    color: #fff;
-    background-color: #f85151;
+
+@media screen and (max-width: 600px) {
+
 }
