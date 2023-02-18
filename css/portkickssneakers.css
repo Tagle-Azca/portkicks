@@ -179,52 +179,60 @@ img{
 }
 
 /*diseño de la seccion donde estan las fotos de los productos*/
-.fullcontainer{
-    background: rgb(58,124,125);
-    background: linear-gradient(0deg, rgba(58,124,125,1) 0%, rgba(255,255,255,1) 100%); 
+.texto-platillos{
+    text-align: center;
+    font-size: 5rem;
 }
 
-
-.container-img{
-    width: 100%;
-    max-width: 1100px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 0%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 390px;
-    grid-gap: 20px;
-    background-color: #000;
+.botones-platillos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
-
-
-
-.container-img .card img{
-    width: 100%;
-    height: 100%;
+.botones-platillos button{
+    flex: 0 0 calc(50% - 1rem);
+    padding: 1rem 3rem;
 }
-
-.container-img .card {
-    position: relative;
-    overflow: hidden;
+@media(min-width: 768px) {
+    .botones-platillos{
+        display: inline-block;
+    }
+    .botones-platillos button{
+        flex: unset;
+    }
 }
-
-.container-img .card .intro {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 78%;
-    height: 80%;
-    bottom: 10px;
-    margin-left: 40px;
-    background-color: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 20px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+@media(min-width: 768px) {
+    .platillos{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap:wrap;
+    }
 }
-
-.container-img .card:hover .intro {
-    transform: translateY(0);
+.platillo{
+    flex: 0 0 calc(33.3% - 1rem);
+    border: 1px solid #e1e1e1;
+    padding: 2rem;
+    border-radius: 5px;
+}
+.platillo h2{
+    text-align: center;
+}
+.platillo p{
+    font-size: 1.8rem;
+}
+.precio{
+    display: flex;
+    justify-content: space-between;
+}
+.precio p{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.precio button{
+    padding:1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--rojo);
+    color: var(--blanco);
+    height: 3.8rem;
 }
